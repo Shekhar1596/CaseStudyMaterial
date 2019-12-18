@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39849" started-at="2019-12-16T11:29:12Z" finished-at="2019-12-16T11:29:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39849" started-at="2019-12-16T11:29:12Z" finished-at="2019-12-16T11:29:52Z">
+      <class name="caseStudy.Scenarios">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:caseStudy.Scenarios@68c4039c]" name="startReport" is-config="true" duration-ms="202" started-at="2019-12-16T16:59:12Z" finished-at="2019-12-16T16:59:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="testregistration()[pri:1, instance:caseStudy.Scenarios@68c4039c]" name="testregistration" duration-ms="28638" started-at="2019-12-16T16:59:12Z" finished-at="2019-12-16T16:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testregistration -->
+        <test-method status="PASS" signature="endReportAfterTest()[pri:0, instance:caseStudy.Scenarios@68c4039c]" name="endReportAfterTest" is-config="true" duration-ms="1049" started-at="2019-12-16T16:59:41Z" finished-at="2019-12-16T16:59:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReportAfterTest -->
+        <test-method status="PASS" signature="testLogin()[pri:2, instance:caseStudy.Scenarios@68c4039c]" name="testLogin" duration-ms="4020" started-at="2019-12-16T16:59:42Z" finished-at="2019-12-16T16:59:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="endReportAfterTest()[pri:0, instance:caseStudy.Scenarios@68c4039c]" name="endReportAfterTest" is-config="true" duration-ms="74" started-at="2019-12-16T16:59:46Z" finished-at="2019-12-16T16:59:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReportAfterTest -->
+        <test-method status="PASS" signature="testCart()[pri:3, instance:caseStudy.Scenarios@68c4039c]" name="testCart" duration-ms="904" started-at="2019-12-16T16:59:46Z" finished-at="2019-12-16T16:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCart -->
+        <test-method status="PASS" signature="endReportAfterTest()[pri:0, instance:caseStudy.Scenarios@68c4039c]" name="endReportAfterTest" is-config="true" duration-ms="46" started-at="2019-12-16T16:59:47Z" finished-at="2019-12-16T16:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReportAfterTest -->
+        <test-method status="PASS" signature="testpayment()[pri:4, instance:caseStudy.Scenarios@68c4039c]" name="testpayment" duration-ms="4834" started-at="2019-12-16T16:59:47Z" finished-at="2019-12-16T16:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpayment -->
+        <test-method status="PASS" signature="endReportAfterTest()[pri:0, instance:caseStudy.Scenarios@68c4039c]" name="endReportAfterTest" is-config="true" duration-ms="60" started-at="2019-12-16T16:59:52Z" finished-at="2019-12-16T16:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReportAfterTest -->
+      </class> <!-- caseStudy.Scenarios -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
