@@ -134,6 +134,7 @@ public class CaseStudySD {
 		String endp = driver.findElement(By.xpath("(//div[@id='errormsg'])[4]")).getText();
 		Assert.assertEquals("User Registered Succesfully!!! Please login", endp);	
 
+
 	}
 
 	@Given("User Registered on the site")
@@ -165,6 +166,7 @@ public class CaseStudySD {
 		Thread.sleep(3000);
 		String endp2 = driver.findElement(By.xpath("//ul[@class='nav navbar-nav']")).getText();
 		Assert.assertEquals("Hi, Lalitha SignOut", endp2);	
+
 
 
 	}
@@ -218,21 +220,12 @@ public class CaseStudySD {
 	@Then("Check the presence of cart button")
 	public void check_the_presence_of_cart_button() throws InterruptedException {
 
-		driver.get("http://10.232.237.143:443/TestMeApp/fetchcat.htm");
-		driver.findElement(By.xpath("//a[@href='login.htm']")).click();
+		driver.findElement(By.xpath("//input[@name='products']")).sendKeys("headphone");
+		driver.findElement(By.xpath("//input[@value='FIND DETAILS']")).click();
+		driver.findElement(By.xpath("//a[contains(.,'Add to cart')]")).click();
 
-		driver.findElement(By.xpath("//input[@id='userName']")).sendKeys("Lalitha");
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Password123");
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		Thread.sleep(3000);
-		String endp2 = driver.findElement(By.xpath("//ul[@class='nav navbar-nav']")).getText();
-		Assert.assertEquals("Hi, Lalitha SignOut", endp2);
-		boolean b=false;
-		
-		driver.findElement(By.xpath("//input[@id='myInput']")).sendKeys("headphone");
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		
-		boolean d =driver.findElement(By.xpath("//a[@href='displayCart.htm']")).isEnabled();
+		boolean b = false;
+		boolean d = driver.findElement(By.xpath("//a[@href='displayCart.htm']")).isDisplayed();
 
 		if (b=!d) {
 			System.out.println("Cart is present");

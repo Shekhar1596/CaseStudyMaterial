@@ -146,9 +146,8 @@ public class Scenarios {
 	@Test(priority=4)
 	public void testpayment() throws InterruptedException {
 
-		//driver.get("http://10.232.237.143:443/TestMeApp/removeCartItem.htm?prodId=1");
+		
 		driver.findElement(By.xpath("//a[@href='checkout.htm']")).click();
-		//driver.findElement(By.xpath("//textarea[@name='ShippingAdd']")).sendKeys("xyzx");
 		driver.findElement(By.xpath("//input[@value='Proceed to Pay']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"swit\"]/div[1]/div/label/i")).click();
